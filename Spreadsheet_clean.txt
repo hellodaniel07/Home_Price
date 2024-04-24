@@ -1,0 +1,16 @@
+
+source: https://www.zillow.com/research/data/
+
+data type: ZHVI Single_Family Homes Time Series / geography: Metro & USA
+
+1. Delete columns 1,2 & 4 (RegionID, SizeRank, RegionType)
+2. Add id column and assign unique id to each field
+3. Rename columns RegionName to location and StateName to state
+4. Round values to 2 decimal places
+5. Duplicate location column
+6. SPLIT 2nd location column into city and state
+7. Use EXACT and COUNTIF functions to identify non-matching states (10 identified)
+8. Correct non-matched states
+9. Corrected city names with spanish diacritics (Cañon City, CO and Española, NM)
+10. Input coordinates for each city
+11. SPLIT coordinate column into latitude and longitude
